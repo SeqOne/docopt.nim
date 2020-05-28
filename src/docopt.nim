@@ -602,7 +602,7 @@ proc docopt_exc(doc: string, argv: seq[string], help: bool, version: string,
         raise docopt_exit
 
 
-proc docopt*(doc: string, argv: seq[string] = command_line_params(), help = true,
+proc docopt*(doc: string, argv: seq[string] = commandLineParams(), help = true,
              version: string = "", options_first = false, quit = true
             ): Table[string, Value] {.gcsafe.} =
     ## Parse `argv` based on command-line interface described in `doc`.
